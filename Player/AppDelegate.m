@@ -22,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor blackColor];
     
-    int f = [[NSUserDefaults standardUserDefaults] integerForKey:FirstComeIn];
+    NSInteger f = [[NSUserDefaults standardUserDefaults] integerForKey:FirstComeIn];
     if (f == 0) {
         [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:FirstComeIn];
         [[NSUserDefaults standardUserDefaults] synchronize];
